@@ -1,500 +1,85 @@
-/*
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com
-Twitter: @rich_clark
-*/
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+* {background-color: palevioletred;}
+
+@font-face {
+  font-family: 'RoughAnthemClassic';
+  src: url(fonts/RoughAnthem.ttf);
 }
 
-body {
-    line-height:1;
-}
+/* Mise en forme du menu de navigation */
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
+nav {
+  color: #fff;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 nav ul {
-    list-style:none;
+  display: flex;
 }
 
-blockquote, q {
-    quotes:none;
+nav li {
+  background-color: #333;
+  flex: 1;
+  text-align: center;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+nav li a {
+  background-color: #333;
+  display: block;
+  color: #fff;
+  line-height: 50px;
+  font-size: 20px;
 }
 
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+nav li a:hover {
+  background-color: #666;
 }
 
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+/* NAV VALIDER - 26/02/23 */
+
+/* Mise en forme des bâtiments & ressouces */
+
+.Wrapper{
+  display: flex;
 }
 
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
+.BlockGauche {
+  width: 70%;
+  background-color: blue;
+  padding: 20px;
 }
 
-del {
-    text-decoration: line-through;
+.BlockDroite {
+  width: 30%;
+  background-color: red;
+  padding: 20px;
+
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-hr {
-    display:block;
-    height:1px;
-    border:0;
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
-* {
-    text-decoration: none;}
-/*RESET CODE FINISHED*/
-/* MY HEADER CODE */
-
-main {
-    padding-top: 100px;
-}
-
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    background-color: #fff;
-    width: 100%;
-    height: 100px;
-    z-index: 99;
-}
-
-header .header-brand {
-    font-family: Catamaran;
-    font-size: 24px;
-    font-weight: 900;
-    color: #111;
-    text-transform: uppercase;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 0;
-}
-
-header nav ul {
-    margin: 0 auto;
-    display: block;
-    width: fit-content; /* necessary for centering */
-}
-
-header nav ul li{
-    float: left;
-    padding: 0 16px;
-}
-
-header nav ul li a{
-    font-family: Catamaran;
-    font-size: 16px;
-    color: #111;
-    text-transform: uppercase;
-}
-
-header .header-cases {
-    display: none;
-}
-
-@media only screen and (min-width: 1000px) {
-    header .header-brand {
-        margin: 31px 0;
-        text-align: left;
-        line-height: 38px;
-        padding: 0 20px 0 40px;
-        border-right: 3px solid #111;
-        float: left;
-    }
-
-    header nav ul {
-        margin: 20px 0px 0px 20px;
-        float: left;
-    }
-
-    header nav ul li a{
-        line-height: 60px;
-    }
-
-    Header .header-cases {
-      display: block;
-      font-family: Catamaran;
-      font-size: 16px;
-      color: #111;
-      text-transform: uppercase;
-      line-height: 38px;
-      border: 1px solid #111;
-      float: right;
-      margin-right: 40px;
-      margin-top: 30px;
-      padding: 0 20px;
-    }
-}
-
-/*INDEX PAGE - ACCEUIL*/
-
-.index-banner {
-    width: 100%;
-    height: calc(100vh - 100px);
-    background-image: url('img/banner.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: table;}
-
-.vertical-center {
-    display: table-cell;
-    vertical-align: middle;}
-
-.index-banner h2 {
-    font-family: Catamaran;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 70px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 2px 2px 8px #111;}
-
-.index-banner h1 {
-    font-family: Cormorant Garamond;
-    font-size: 28px;
-    font-weight: 100;
-    font-style: italic;
-    line-height: 40px;
-    color: #fff;
-    text-align: center;
-    text-shadow: 2px 2px 8px #111;}
-
-.index-links div {
-    margin: 16px 16px 0;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #f2f2f2;}
-
-.index-links div h3 {
-    font-family: Catamaran;
-    font-size: 28px;
-    font-weight: 600;
-    line-height: 100px;
-    color: #111;
-    text-align: center;
-    text-transform: uppercase;}
-
-
-
-/* MODIFICATION A FAIRE POUR VERSION PC*/
-@media only screen and (min-width: 1000px) {
-  .wrapper {
-    width: 1000px;
-    margin: 0 auto;}
-
-  .index-banner {
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    display: table;}
-
-  .index-banner h1 {
-    display: block;
-    width: 560px;
-    margin: 0 auto;}
-
-  .index-links {
-    overflow: hidden;}
-
-  .index-links div {
-    margin: 20px 10px 0;
-    height: 230px;
-    background-color: #f2f2f2;
-    float: left;}
-
-  .index-boxlink-game {
-      width: calc(50% - 20px) !important; /* overrides the previous styling*/}
-
-  .index-links div h3 {
-      line-height: 230px;}
-
-  .index-links div h4 {
-    line-height: 115px;}}
-
-/* RULES */
-
-.rules {
-  margin: 16px 16px 0;}
-
-.rules h2 {
-    font-family: Catamaran;
-    font-size: 28px;
-    font-weight: 600;
-    color: #111;
-    text-align: center;
-    text-transform: uppercase;}
-
-.rules article h3 {
-    font-family: Catamaran;
-    font-size: 28px;
-    font-weight: 600;
-    color: #111;
-    text-transform: uppercase;
-    padding-bottom: 20px;}
-
-/* RED */
-
-.red {
-  color: red;
-}
-
-/* TEXTE AVEC COLONNE*/
-
-.text-col0 p {
-    font-family: Catamaran;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    color: #111;
-    text-transform: uppercase;
-    text-align: justify;
-}
-
-.text-col2 p {
-    font-family: Catamaran;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    color: #111;
-    text-transform: uppercase;
-    column-gap: 40px;
-    text-align: justify;
-}
-
-
-@media only screen and (min-width: 1000px) {
-  .text-col2 p {
-      column-count: 2;
-  }}
-
-.text-col0 a {
-  color: blue;
-}
-
-/* PAGE AVEC GIF */
-
-.GIF{
-  width:100%;
-  height:0;
-  padding-bottom:50%;
-  position:relative;
-}
-
-@media only screen and (min-width: 1000px) {
-  .GIF{
-    padding-bottom:25%;
-  }}
-
-
-/* NOTRE CODE - NOTRE CSS */
-
-.TitleQuest {
-  font-family: Catamaran;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 26px;
+.BlockTitre {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  height: 80px;
   font-weight: 600;
-  color: #111;
-  text-transform: uppercase;}
+  font-family: RoughAnthemClassic;
+  background-color: #333;
+  color: white;
+  }
 
-.TitleQuestBis {
-  font-family: Catamaran;
-  margin-top: 20px;
-  font-size: 26px;
-  font-weight: 600;
-  color: #111;
-  text-transform: uppercase;}
+.buildings {
+  padding: 10px;
+  margin: 10px;
 }
 
-/* QUESTIONS */
+.buildings h2 {
+  font-size: 16px;
+  font-family: RoughAnthemClassic;
+}
 
-.Quest div {
-  height: 100px;}
-
-.Quest div h3 {
-    font-family: Catamaran;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 100px;
-    color: #111;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
-    margin: 16px 16px 0;
-    width: calc(100% - 32px);
-    background-color: #f2f2f2;}
-
-.Quest div h4 {
-    font-family: Catamaran;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 50px;
-    color: #111;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
-    margin: 16px 16px 0;
-    width: calc(100% - 32px);
-    background-color: #f2f2f2;}
-
-
-/* REPONSES */
-
-.RepLinks div {
-    margin: 16px 16px 0;
-    width: calc(100% - 32px);
-    height: 100px;
-    background-color: #f2f2f2;}
-
-.RepLinks div h3 {
-    font-family: Catamaran;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 100px;
-    color: #111;
-    text-align: center;
-    text-transform: uppercase;}
-
-
-/* MODIFICATION A FAIRE POUR VERSION PC*/
-
-@media only screen and (min-width: 1000px) {
-  .RepLinks {
-    overflow: hidden;}
-
-  .RepLinks div {
-    margin: 20px 10px 0;
-    height: 115px;
-    background-color: #f2f2f2;
-    float: left;}
-
-  .RepQue {
-      width: calc(50% - 20px) !important; /* overrides the previous styling*/}
-
-  .RepBonus {
-      width: calc(100%/3 - 20px) !important;}
-
-  .RepLinks div h3 {
-      line-height: 115px;}
-
-  .RepLinks div h4 {
-    line-height: 115px;}}
-
-
-/* FOOTER */
-
-footer {
-    width: calc(100% - 80px);
-    padding: 40px 40px;
-    margin-top: 20px;
-    background-color: #111;
-    overflow: hidden; /*trick so that the footer does not overflow on content*/}
-
-footer ul {
-    width: fit-content;
-    float: left;
-    padding-left: 20px;}
-
-footer ul li {
-    display: block;
-    list-style: none;}
-
-footer ul li a {
-    font-family: Catamaran;
-    font-size: 16px;
-    color: #fff;
-    line-height: 40px;
-    text-transform: uppercase;}
-
-footer ul li p {
-    font-family: Catamaran;
-    font-size: 16px;
-    color: #fff;
-    line-height: 40px;
-    text-transform: uppercase;}
-
-.footer-links-cases {
-    display: none;}
-
-.footer-sm {
-    width: 50px;
-    float: right;}
-
-.footer-sm img {
-    width: 100%;
-    margin-bottom: 10px;}
-
-@media only screen and (min-width: 1000px) {
-    .footer-links-cases {
-        display: block;}
-
-    footer ul {
-        padding-right: 30px;}
-
-    footer ul li p {
-        font-family: Catamaran;
-        font-size: 16px;
-        color: #fff;
-        line-height: 40px;}
+.Ressources {
+  padding: 10px;
+  margin: 10px;
 }
