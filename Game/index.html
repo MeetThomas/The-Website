@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Building Purchase</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="jeu.html">MA BASE</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">ME CONTACTER</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="Wrapper">
+      <div class="BlockGauche">
+        <h1 class="BlockTitre">Building Purchase</h1>
+
+        <div class="buildings">
+          <h2>Mine</h2>
+          <p>Niveau : <span id="mine-level">0</span></p>
+          <p>Coût : <span id="mine-cost">500 or et 200 bois</span></p>
+          <button id="mine-button">Acheter</button>
+          <p>Production : <span id="mine-production">0</span> or / s</p>
+        </div>
+
+        <div class="buildings">
+          <h2>Forêt</h2>
+          <p>Niveau actuel : <span id="forest-level">0</span></p>
+          <p>Coût : <span id="forest-cost">200 or</span></p>
+          <button id="forest-button">Acheter</button>
+          <p>Production : <span id="forest-production">0</span> bois / s</p>
+        </div>
+
+        <div class="buildings">
+          <h2>Plateformes Pétrolières</h2>
+          <div class="oilcat">
+            <h3>Plateforme Terrestre</h3>
+            <p>Niveau actuel : <span id="oil-level-onshore">0</span></p>
+            <p>Coût : <span id="oil-cost-onshore">500 or</span></p>
+            <button id="oil-button-onshore">Acheter</button>
+            <p>
+              Production : <span id="oil-production-onshore">0</span> barils de
+              pétrole / s
+            </p>
+          </div>
+
+          <div class="oilcat">
+            <h3>Plateforme Maritime</h3>
+            <p>Niveau actuel : <span id="oil-level-offshore">0</span></p>
+            <p>Coût : <span id="oil-cost-offshore">10000 or</span></p>
+            <button id="oil-button-offshore">Acheter</button>
+            <p>
+              Production : <span id="oil-production-offshore">0</span> barils de
+              pétrole / s
+            </p>
+          </div>
+        </div>
+        <div class="buildings">
+          <button id="storage-button">
+            Acheter un hangar (coût : 1000 or)
+          </button>
+        </div>
+
+        <div class="buildings">
+          <h2>Raffinerie</h2>
+          <p>
+            Transforme 100 unité de pétrole en 80 unité d'essence. Nécessite 100
+            unité de pétrole pour fonctionner.
+          </p>
+          <p>Coût : 5000 Or</p>
+          <button id="refinery-button">Acheter</button>
+          <div>
+            Nombre de raffineries :<span id="refinery-count-label"></span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="BlockDroite">
+        <h1 class="BlockTitre">Stockage</h1>
+        <div>
+          <div class="Ressources" id="storage-label">Stockage : 1000</div>
+        </div>
+
+        <div>
+          <div class="Ressources">Or : <span id="gold-label">5000</span></div>
+          <div class="Ressources">Bois :<span id="wood-label">5000</span></div>
+          <div class="Ressources">Pétrole :<span id="oil-label">0</span></div>
+          <div class="Ressources">
+            Essence :<span id="gasoline-label"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="ressource/list.js"></script>
+    <script src="building/forest.js"></script>
+    <script src="building/goldmine.js"></script>
+
+
+
+    <script src="ressource/update.js"></script>
+
+    <script src="building/oilonandoff.js"></script>
+    <script src="building/refinery.js"></script>
+    <script src="building/storage.js"></script>
+
+  </body>
+</html>

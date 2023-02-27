@@ -1,0 +1,85 @@
+
+* {background-color: palevioletred;}
+
+@font-face {
+  font-family: 'RoughAnthemClassic';
+  src: url(fonts/RoughAnthem.ttf);
+}
+
+/* Mise en forme du menu de navigation */
+
+nav {
+  color: #fff;
+  height: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  background-color: #333;
+  flex: 1;
+  text-align: center;
+}
+
+nav li a {
+  background-color: #333;
+  display: block;
+  color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+nav li a:hover {
+  background-color: #666;
+}
+
+/* NAV VALIDER - 26/02/23 */
+
+/* Mise en forme des bâtiments & ressouces */
+
+.Wrapper{
+  display: flex;
+}
+
+.BlockGauche {
+  width: 70%;
+  background-color: blue;
+  padding: 20px;
+}
+
+.BlockDroite {
+  width: 30%;
+  background-color: red;
+  padding: 20px;
+
+}
+
+.BlockTitre {
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  height: 80px;
+  font-weight: 600;
+  font-family: RoughAnthemClassic;
+  background-color: #333;
+  color: white;
+  }
+
+.buildings {
+  padding: 10px;
+  margin: 10px;
+}
+
+.buildings h2 {
+  font-size: 16px;
+  font-family: RoughAnthemClassic;
+}
+
+.Ressources {
+  padding: 10px;
+  margin: 10px;
+}
